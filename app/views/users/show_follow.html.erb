@@ -1,0 +1,23 @@
+<div >
+  <aside>
+    <section>
+      <h1><%= @user.name %></h1>
+      <span><%= link_to "view my profile", @user %></span>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+      <% if @users.any? %>
+
+      <% end %>
+    </section>
+  </aside>
+  <div >
+    <h3><%= @title %></h3>
+    <% if @users.any? %>
+      <ul>
+        <%= render @users %>
+      </ul>
+      <%= will_paginate %>
+    <% end %>
+  </div>
+</div>

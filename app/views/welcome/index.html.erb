@@ -1,0 +1,21 @@
+<% if signed_in? %>
+  <div >
+    <aside >
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/stats' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+  <div>
+    <h1>Welcome to the Sample App</h1>
+
+
+    <%= link_to "Sign up now!", signup_path,
+                                class: "btn btn-large btn-primary" %>
+  </div>
+
+<% end %>

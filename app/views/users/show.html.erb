@@ -1,0 +1,15 @@
+<%= @user.name %>, <%= @user.email %>
+<div >
+  <aside >
+    <section>
+      <h1>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+  </aside>
+<div>
+	    <%= render 'follow_form' if signed_in? %>
+	</div>

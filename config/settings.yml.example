@@ -1,0 +1,12 @@
+defaults: &defaults
+  time_zone: 'Beijing'
+  default_locale: 'zh-CN'
+
+development:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test:
+  <<: *defaults
